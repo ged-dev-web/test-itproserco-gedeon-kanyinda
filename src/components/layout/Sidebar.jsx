@@ -46,8 +46,8 @@ export default function Sidebar({ activeSection, onNavigate, mobileMenuOpen, onC
             <button onClick={() => onToast('Votre demande de passage à Pro a été prise en compte.')}>Découvrir l'offre <ChevronRight size={14} /></button>
           </div>
           <div className="user-card">
-            <span className="user-avatar">FM</span>
-            <span><strong>Fiona M.</strong><small>Administratrice</small></span>
+            <span className="user-avatar">GK</span>
+            <span><strong>GEDEON KANYINDA.</strong><small>Administrateur</small></span>
             <MoreHorizontal size={18} />
           </div>
         </div>
