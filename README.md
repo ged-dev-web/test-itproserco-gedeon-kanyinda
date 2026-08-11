@@ -1,4 +1,4 @@
-# Ariane Store — Dashboard produits
+# Gedeon Store — Dashboard produits
 
 Dashboard e-commerce front-end réalisé en React (JSX), inspiré des maquettes du test technique IT Proserco.
 
