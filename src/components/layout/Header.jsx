@@ -12,7 +12,7 @@ export default function Header({ onOpenMobile, onToast }) {
           <kbd>⌘ K</kbd>
         </label>
         <button className="icon-button notification-button" onClick={() => onToast('Vous êtes à jour.')} aria-label="Notifications"><Bell size={19} /><span /></button>
-        <span className="topbar-avatar">FM</span>
+        <span className="topbar-avatar">GK</span>
       </div>
     </header>
   );
