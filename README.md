@@ -1,6 +1,15 @@
 # Gedeon Store — Dashboard produits
+  
+Application Front-End développée dans le cadre du test technique de recrutement Développeur Web Front-End chez IT PROSERCO.
+L’objectif du projet est de reproduire une interface moderne d’administration e-commerce permettant de gérer un catalogue de produits, avec une interface responsive, interactive et maintenable, inspiré des maquettes.
 
-Dashboard e-commerce front-end réalisé en React (JSX), inspiré des maquettes du test technique IT Proserco.
+## Démonstration
+
+Application en ligne :
+https://test-itproserco-gedeon-kanyinda.vercel.app
+
+Dépôt GitHub :
+https://github.com/ged-dev-web/test-itproserco-gedeon-kanyinda
 
 ## Structure des fichiers
 
@@ -27,21 +36,116 @@ src/
 ├── main.jsx                     → Point d'entrée React
 └── index.css                    → Tous les styles du dashboard
 ```
+## Présentation du projet
 
-## Fonctionnalités
+Cette application représente une partie d'un dashboard d'administration e-commerce destiné à la gestion des produits.
+Elle comprend principalement :
+- la gestion du catalogue de produits ;
+- l'affichage des produits en liste ;
+- l'affichage des produits en grille/cards ;
+- la recherche de produits ;
+- les filtres ;
+- le tri ;
+- la pagination ;
+- l'ajout d'un nouveau produit ;
+- la validation du formulaire ;
+- la prévisualisation des images ;
+- la gestion du stock et des informations produit ;
+- une interface responsive adaptée aux différents écrans.
+Le projet est exclusivement Front-End.
 
-- Vue liste et vue grille interchangeables
-- Recherche instantanée par nom, catégorie et SKU
-- Filtres par statut et catégorie
-- Tri par date, prix et stock
-- Pagination réelle sur les résultats filtrés
-- Ajout d'un produit avec validation des champs obligatoires
-- Enregistrement en brouillon ou publication dans le catalogue
-- Modification et suppression des produits existants
-- Prévisualisation d'image locale avant enregistrement
-- Persistance des produits dans le navigateur via LocalStorage
-- Sidebar responsive avec menu mobile
-- États vides, notifications, badges de statut et feedbacks utilisateur
+### Fonctionnalités
+
+## Gestion des produits
+- Affichage des produits sous forme de tableau.
+- Affichage des produits sous forme de cartes.
+- Bascule dynamique entre la vue Liste et la vue Grille.
+- Recherche par produit ou catégorie.
+- Filtrage par statut.
+- Tri des produits.
+- Pagination.
+- Affichage des informations essentielles :
+  - image ;
+  - nom ;
+  - SKU ;
+  - catégorie ;
+  - prix ;
+  - stock ;
+  - ventes ;
+  - statut ;
+  - actions.
+Recherche, filtres et tri
+La recherche permet de retrouver rapidement un produit dans le catalogue.
+Les filtres permettent notamment d'afficher :
+- Tous ;
+- Actifs ;
+- Brouillons ;
+- Rupture.
+
+Le tri permet notamment de classer les produits par :
+- Plus récents ;
+- Prix croissant ;
+- Prix décroissant ;
+- Stock croissant ;
+- Stock décroissant.
+
+Ces fonctionnalités sont conservées lors du passage entre la vue liste et la vue grille.
+
+## Ajout d'un produit
+
+Une interface dédiée permet de créer un nouveau produit avec plusieurs sections :
+- Informations générales ;
+- Description ;
+- Catégorie ;
+- Marque ;
+- Médias ;
+- Prix et tarification ;
+- Organisation ;
+- Inventaire ;
+- Livraison ;
+- Variantes.
+Les champs obligatoires sont validés avant la publication.
+
+## Gestion des images
+
+L'interface permet :
+- de sélectionner une image ;
+- de prévisualiser l'image ;
+- d'identifier l'image principale.
+
+## Statistiques
+
+Le dashboard présente plusieurs indicateurs permettant de donner une vision synthétique de l'activité :
+- chiffre d'affaires ;
+- commandes ;
+- produits actifs ;
+- produits nécessitant un réapprovisionnement.
+
+## Responsive Design
+
+L'application a été conçue pour fonctionner sur :
+
+- Desktop ;
+- Mobile ;
+- Tablette.
+
+L'interface s'adapte notamment au niveau :
+- de la sidebar ;
+- du header ;
+- du tableau ;
+- des cartes produits ;
+- des statistiques ;
+- du formulaire ;
+- des actions.
+
+## Technologies utilisées
+Front-End
+React.js
+JavaScript / JSX
+SCSS / CSS
+Git
+GitHub
+Vercel
 
 ## Démarrage
 
@@ -49,7 +153,6 @@ src/
 npm install
 npm run dev
 ```
-
 Les données de démonstration sont chargées au premier lancement. Les changements sont ensuite conservés dans le navigateur.
 
 ## Vérifications
@@ -70,15 +173,6 @@ L'application est organisée par responsabilités :
 - **`pages/`** : vues principales, une par écran (catalogue, ajout/modification)
 - **`App.jsx`** : orchestre l'état global (produits, formulaire, notifications) et bascule entre les pages
 
-## Choix techniques
-
-- React 18 en JSX (sans TypeScript)
-- Lucide React pour les icônes
-- CSS responsive sans dépendance UI supplémentaire
-- LocalStorage pour simuler un catalogue persistant sans backend
-- Images produit issues de Pexels et remplaçables via l'ajout d'une image locale
-- Alias `@/` pour les imports (pointe vers `src/`)
-
 ## Utilisation de l'IA
 
 L'IA a été utilisée comme assistant de conception et de développement pour accélérer la mise en place de la structure React, des interactions et du style. Le code généré a été relu, adapté au périmètre du test et vérifié avec les contrôles de compilation du projet.
@@ -88,3 +182,8 @@ L'IA a été utilisée comme assistant de conception et de développement pour a
 - L'import CSV est représenté par un feedback d'interface, sans traitement de fichier métier.
 - Les sections secondaires de la sidebar affichent un feedback de disponibilité plutôt qu'une page dédiée.
 - Les images locales sont stockées sous forme de données navigateur et ne sont pas envoyées sur un serveur.
+
+## 📄 Contexte
+
+Projet réalisé dans le cadre du test technique — Développeur Web Front-End pour IT PROSERCO.
+Le projet vise à démontrer la capacité à analyser une maquette, construire une interface React moderne, gérer les interactions côté client, concevoir des composants réutilisables, assurer le responsive design et déployer une application Front-End en production.
