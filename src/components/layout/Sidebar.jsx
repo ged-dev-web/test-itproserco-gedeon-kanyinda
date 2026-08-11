@@ -15,12 +15,12 @@ export default function Sidebar({ activeSection, onNavigate, mobileMenuOpen, onC
       <aside className={`sidebar ${mobileMenuOpen ? 'sidebar--open' : ''}`}>
         <div className="brand">
           <span className="brand-mark"><ShoppingBag size={18} strokeWidth={2.6} /></span>
-          <span>ariane</span>
+          <span>gedeon</span>
           <button className="icon-button sidebar-close" onClick={onCloseMobile} aria-label="Fermer le menu"><X size={18} /></button>
         </div>
         <div className="store-switcher">
-          <span className="store-avatar">A</span>
-          <span><strong>Ariane Store</strong><small>Boutique principale</small></span>
+          <span className="store-avatar">GED</span>
+          <span><strong>Gedeon Store</strong><small>Boutique principale</small></span>
           <ChevronDown size={15} />
         </div>
         <nav className="side-nav" aria-label="Navigation principale">
